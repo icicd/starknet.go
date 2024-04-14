@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/NethermindEth/starknet.go/utils"
+	"github.com/icicd/starknet.go/utils"
 )
 
 // TestDevnet_IsAlive tests the IsAlive method of the Devnet struct.

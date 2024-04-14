@@ -5,8 +5,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/NethermindEth/starknet.go/contracts"
-	"github.com/NethermindEth/starknet.go/rpc"
+	"github.com/icicd/starknet.go/contracts"
+	"github.com/icicd/starknet.go/rpc"
 	"github.com/test-go/testify/assert"
 	"github.com/test-go/testify/require"
 )

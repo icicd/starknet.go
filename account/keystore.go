@@ -9,8 +9,8 @@ import (
 	"sync"
 
 	"github.com/NethermindEth/juno/core/felt"
-	"github.com/NethermindEth/starknet.go/curve"
-	"github.com/NethermindEth/starknet.go/utils"
+	"github.com/icicd/starknet.go/curve"
+	"github.com/icicd/starknet.go/utils"
 )
 
 type Keystore interface {

@@ -4,12 +4,12 @@ go 1.21
 
 require (
 	github.com/NethermindEth/juno v0.3.1
-	github.com/NethermindEth/starknet.go v0.2.1-0.20220620163912-1db2ca279608
+	github.com/icicd/starknet.go v0.2.1-0.20220620163912-1db2ca279608
 	github.com/ethereum/go-ethereum v1.10.26
 	github.com/joho/godotenv v1.4.0
 )
 
-replace github.com/NethermindEth/starknet.go => ../../
+replace github.com/icicd/starknet.go => ../../
 
 require (
 	github.com/StackExchange/wmi v0.0.0-20180116203802-5d049714c4a6 // indirect

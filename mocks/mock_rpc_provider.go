@@ -14,7 +14,7 @@ import (
 	reflect "reflect"
 
 	felt "github.com/NethermindEth/juno/core/felt"
-	rpc "github.com/NethermindEth/starknet.go/rpc"
+	rpc "github.com/icicd/starknet.go/rpc"
 	gomock "github.com/golang/mock/gomock"
 )
 

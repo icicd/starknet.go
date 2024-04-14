@@ -9,7 +9,7 @@ import (
 	"strings"
 
 	"github.com/NethermindEth/juno/core/felt"
-	"github.com/NethermindEth/starknet.go/utils"
+	"github.com/icicd/starknet.go/utils"
 	"github.com/pkg/errors"
 )
 

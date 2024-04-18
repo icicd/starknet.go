@@ -116,6 +116,22 @@ func (provider *Provider) TransactionReceipt(ctx context.Context, transactionHas
 	return &receipt, nil
 }
 
+// @TransactionReceiptCommon
+// @Description: 获取回执信息(原方法TransactionReceipt使用了interface，没法获取全部信息)
+// @param ctx context.Context
+// @param transactionHash *felt.Felt
+// @return *TransactionReceiptCommon
+// @return error
+func (provider *Provider) TransactionReceiptCommon(ctx context.Context,
+	transactionHash *felt.Felt) (*TransactionReceiptCommon, error) {
+	var receipt TransactionReceiptCommon
+	err := do(ctx, provider.c, "starknet_getTransactionReceipt", &receipt, transactionHash)
+	if err != nil {
+		return nil, tryUnwrapToRPCErr(err, ErrHashNotFound)
+	}
+	return &receipt, nil
+}
+
 // GetTransactionStatus gets the transaction status (possibly reflecting that the tx is still in the mempool, or dropped from it)
 // Parameters:
 // - ctx: the context.Context object for cancellation and timeouts.

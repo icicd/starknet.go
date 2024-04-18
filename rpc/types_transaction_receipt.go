@@ -441,3 +441,9 @@ type TransactionReceiptWithBlockInfo struct {
 	BlockHash   *felt.Felt `json:"block_hash,omitempty"`
 	BlockNumber uint       `json:"block_number,omitempty"`
 }
+
+type TransactionReceiptCommon struct {
+	CommonTransactionReceipt
+	BlockHash   *felt.Felt `json:"block_hash,omitempty"`
+	BlockNumber uint       `json:"block_number,omitempty"`
+}

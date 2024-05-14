@@ -80,6 +80,7 @@ func NewAccount(provider rpc.RpcProvider, accountAddress *felt.Felt, publicKey s
 	return account, nil
 }
 
+// NewAccountWithoutProvider creates a new Account instance.
 func NewAccountWithoutProvider(chainID string, accountAddress *felt.Felt, publicKey string, keystore Keystore,
 	cairoVersion int) (*Account, error) {
 	account := &Account{

@@ -80,6 +80,18 @@ func NewAccount(provider rpc.RpcProvider, accountAddress *felt.Felt, publicKey s
 	return account, nil
 }
 
+func NewAccountWithoutProvider(chainID string, accountAddress *felt.Felt, publicKey string, keystore Keystore,
+	cairoVersion int) (*Account, error) {
+	account := &Account{
+		ChainId:        new(felt.Felt).SetBytes([]byte(chainID)),
+		AccountAddress: accountAddress,
+		publicKey:      publicKey,
+		ks:             keystore,
+		CairoVersion:   cairoVersion,
+	}
+	return account, nil
+}
+
 // Sign signs the given felt message using the account's private key.
 //
 // Parameters:

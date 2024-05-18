@@ -6,8 +6,8 @@ import (
 	"log"
 	"os"
 
-	"github.com/icicd/starknet.go/rpc"
-	"github.com/icicd/starknet.go/utils"
+	"github.com/NethermindEth/starknet.go/rpc"
+	"github.com/NethermindEth/starknet.go/utils"
 	"github.com/joho/godotenv"
 )
 

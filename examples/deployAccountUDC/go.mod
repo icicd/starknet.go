@@ -4,7 +4,7 @@ go 1.21
 
 require (
 	github.com/NethermindEth/juno v0.3.1
-	github.com/icicd/starknet.go v0.4.6-0.20231005024141-742a82479868
+	github.com/NethermindEth/starknet.go v0.4.6-0.20231005024141-742a82479868
 	github.com/joho/godotenv v1.4.0
 )
 
